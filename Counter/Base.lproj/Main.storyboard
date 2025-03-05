@@ -16,23 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfi-Wd-JE5">
-                                <rect key="frame" x="104" y="263" width="185" height="221"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="221" id="Ftf-ZN-FBg"/>
-                                    <constraint firstAttribute="width" constant="185" id="MCj-og-CQY"/>
-                                    <constraint firstAttribute="width" secondItem="Kfi-Wd-JE5" secondAttribute="height" multiplier="185:221" id="VF0-wC-cPt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="89"/>
-                                <color key="textColor" red="0.059385921389999999" green="0.14982337539999999" blue="0.47103604700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GDl-UA-Egz">
                                 <rect key="frame" x="53" y="666" width="306" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="486-Yf-nx5"/>
+                                    <constraint firstAttribute="width" secondItem="GDl-UA-Egz" secondAttribute="height" multiplier="102:13" id="4o3-f6-eCQ"/>
+                                    <constraint firstAttribute="height" constant="39" id="CaX-7L-XBD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="Hfq-S2-cgn"/>
                                     <constraint firstAttribute="width" secondItem="GDl-UA-Egz" secondAttribute="height" multiplier="102:13" id="QSo-a6-LQ3"/>
                                     <constraint firstAttribute="width" constant="306" id="fUb-72-qt2"/>
+                                    <constraint firstAttribute="width" secondItem="GDl-UA-Egz" secondAttribute="height" multiplier="102:13" id="l8g-fY-y26"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="306" id="lbq-Hb-pRT"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="306" id="vEa-aF-TEF"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
@@ -56,23 +51,103 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QSo-a6-LQ3"/>
+                                        <exclude reference="486-Yf-nx5"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="buttonDidTap:" destination="BYZ-38-t0r" eventType="touchDown" id="ilg-dG-xI1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfi-Wd-JE5">
+                                <rect key="frame" x="38" y="275" width="321" height="221"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="221" id="02A-BJ-rGR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="185" id="3Qz-cd-gxe"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="165" id="9mt-Bu-r5Y"/>
+                                    <constraint firstAttribute="width" secondItem="Kfi-Wd-JE5" secondAttribute="height" multiplier="321:221" id="A7F-wM-uSu"/>
+                                    <constraint firstAttribute="width" secondItem="Kfi-Wd-JE5" secondAttribute="height" multiplier="321:221" id="C8X-k1-hsx"/>
+                                    <constraint firstAttribute="height" constant="221" id="Ftf-ZN-FBg"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="306" id="KeI-UC-zk8"/>
+                                    <constraint firstAttribute="width" constant="185" id="MCj-og-CQY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="321" id="QcL-Zs-QkN"/>
+                                    <constraint firstAttribute="width" secondItem="Kfi-Wd-JE5" secondAttribute="height" multiplier="185:221" id="RJs-SG-zG1"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="221" id="V2j-Fb-kYB"/>
+                                    <constraint firstAttribute="width" secondItem="Kfi-Wd-JE5" secondAttribute="height" multiplier="185:221" id="VF0-wC-cPt"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="221" id="Xzq-1k-31v"/>
+                                    <constraint firstAttribute="width" secondItem="Kfi-Wd-JE5" secondAttribute="height" multiplier="102:55" id="js2-jA-cAH"/>
+                                    <constraint firstAttribute="width" constant="321" id="w7x-Yv-qSy"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Значение счетчика: 0">
+                                        <attributes>
+                                            <color key="NSColor" red="0.10513699799776077" green="0.089731045067310333" blue="0.5309605598449707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="Arial-ItalicMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KeI-UC-zk8"/>
+                                        <exclude reference="3Qz-cd-gxe"/>
+                                        <exclude reference="MCj-og-CQY"/>
+                                        <exclude reference="RJs-SG-zG1"/>
+                                        <exclude reference="VF0-wC-cPt"/>
+                                        <exclude reference="js2-jA-cAH"/>
+                                        <exclude reference="9mt-Bu-r5Y"/>
+                                        <exclude reference="V2j-Fb-kYB"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Kfi-Wd-JE5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="0IM-5c-mf7"/>
                             <constraint firstItem="GDl-UA-Egz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="2r6-jf-7DI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kfi-Wd-JE5" secondAttribute="trailing" constant="104" id="8ov-Cr-2a8"/>
+                            <constraint firstItem="Kfi-Wd-JE5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="5Eh-aA-pbG"/>
+                            <constraint firstItem="Kfi-Wd-JE5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="195" id="5Kn-ne-D7b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GDl-UA-Egz" secondAttribute="bottom" constant="113" id="A88-66-vwg"/>
-                            <constraint firstItem="Kfi-Wd-JE5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="204" id="Mxi-bl-MVV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kfi-Wd-JE5" secondAttribute="trailing" constant="34" id="BUi-Ah-Hwi"/>
+                            <constraint firstItem="GDl-UA-Egz" firstAttribute="top" secondItem="Kfi-Wd-JE5" secondAttribute="bottom" constant="170" id="I1C-e1-6K0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kfi-Wd-JE5" secondAttribute="trailing" constant="94" id="Orw-3S-Cc8"/>
+                            <constraint firstItem="GDl-UA-Egz" firstAttribute="top" secondItem="Kfi-Wd-JE5" secondAttribute="bottom" constant="191" id="PKa-TE-Vfy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GDl-UA-Egz" secondAttribute="trailing" constant="34" id="QOR-dJ-uDN"/>
-                            <constraint firstItem="GDl-UA-Egz" firstAttribute="top" secondItem="Kfi-Wd-JE5" secondAttribute="bottom" constant="182" id="fyN-EZ-lTq"/>
-                            <constraint firstItem="GDl-UA-Egz" firstAttribute="top" secondItem="Kfi-Wd-JE5" secondAttribute="bottom" constant="182" id="kmT-fA-xWS"/>
-                            <constraint firstItem="Kfi-Wd-JE5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="lVj-jh-0x7"/>
+                            <constraint firstItem="GDl-UA-Egz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="YNT-lC-kFO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GDl-UA-Egz" secondAttribute="bottom" constant="113" id="ZLV-Ir-fI4"/>
+                            <constraint firstItem="GDl-UA-Egz" firstAttribute="top" secondItem="Kfi-Wd-JE5" secondAttribute="bottom" constant="226" id="ald-1W-vc8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GDl-UA-Egz" secondAttribute="trailing" constant="34" id="dhe-fn-MQm"/>
+                            <constraint firstItem="GDl-UA-Egz" firstAttribute="top" secondItem="Kfi-Wd-JE5" secondAttribute="bottom" constant="170" id="dxM-bc-mTM"/>
+                            <constraint firstItem="Kfi-Wd-JE5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="216" id="f7G-gj-Y4E"/>
+                            <constraint firstItem="Kfi-Wd-JE5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="216" id="fu3-6i-tAg"/>
+                            <constraint firstItem="GDl-UA-Egz" firstAttribute="top" secondItem="Kfi-Wd-JE5" secondAttribute="bottom" constant="170" id="fzt-XP-wLy"/>
+                            <constraint firstItem="Kfi-Wd-JE5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="gBa-n8-eau"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GDl-UA-Egz" secondAttribute="trailing" constant="34" id="hXE-tW-CdI"/>
+                            <constraint firstItem="GDl-UA-Egz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="hmp-Ep-shS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GDl-UA-Egz" secondAttribute="bottom" constant="113" id="jvJ-hY-AMH"/>
+                            <constraint firstItem="Kfi-Wd-JE5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="oAs-B0-dkx"/>
+                            <constraint firstItem="Kfi-Wd-JE5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="216" id="rjN-cM-uRC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kfi-Wd-JE5" secondAttribute="trailing" constant="34" id="sFN-Vt-GSH"/>
+                            <constraint firstItem="GDl-UA-Egz" firstAttribute="top" secondItem="Kfi-Wd-JE5" secondAttribute="bottom" constant="226" id="uMN-81-f64"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kfi-Wd-JE5" secondAttribute="trailing" constant="34" id="veC-Bq-y5K"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Orw-3S-Cc8"/>
+                                <exclude reference="veC-Bq-y5K"/>
+                                <exclude reference="A88-66-vwg"/>
+                                <exclude reference="5Eh-aA-pbG"/>
+                                <exclude reference="oAs-B0-dkx"/>
+                                <exclude reference="5Kn-ne-D7b"/>
+                                <exclude reference="ald-1W-vc8"/>
+                                <exclude reference="uMN-81-f64"/>
+                                <exclude reference="PKa-TE-Vfy"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="changeButton" destination="GDl-UA-Egz" id="nsL-zb-J9x"/>
