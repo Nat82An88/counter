@@ -1,24 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfi-Wd-JE5">
+                                <rect key="frame" x="104" y="263" width="185" height="221"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="221" id="Ftf-ZN-FBg"/>
+                                    <constraint firstAttribute="width" constant="185" id="MCj-og-CQY"/>
+                                    <constraint firstAttribute="width" secondItem="Kfi-Wd-JE5" secondAttribute="height" multiplier="185:221" id="VF0-wC-cPt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="89"/>
+                                <color key="textColor" red="0.059385921389999999" green="0.14982337539999999" blue="0.47103604700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GDl-UA-Egz">
+                                <rect key="frame" x="53" y="666" width="306" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="486-Yf-nx5"/>
+                                    <constraint firstAttribute="width" secondItem="GDl-UA-Egz" secondAttribute="height" multiplier="102:13" id="QSo-a6-LQ3"/>
+                                    <constraint firstAttribute="width" constant="306" id="fUb-72-qt2"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Tap to Count">
+                                            <attributes>
+                                                <font key="NSFont" size="25" name="Rockwell-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Tap to Count">
+                                            <attributes>
+                                                <font key="NSFont" size="25" name="Rockwell-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonDidTap:" destination="BYZ-38-t0r" eventType="touchDown" id="ilg-dG-xI1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GDl-UA-Egz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="2r6-jf-7DI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kfi-Wd-JE5" secondAttribute="trailing" constant="104" id="8ov-Cr-2a8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GDl-UA-Egz" secondAttribute="bottom" constant="113" id="A88-66-vwg"/>
+                            <constraint firstItem="Kfi-Wd-JE5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="204" id="Mxi-bl-MVV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GDl-UA-Egz" secondAttribute="trailing" constant="34" id="QOR-dJ-uDN"/>
+                            <constraint firstItem="GDl-UA-Egz" firstAttribute="top" secondItem="Kfi-Wd-JE5" secondAttribute="bottom" constant="182" id="fyN-EZ-lTq"/>
+                            <constraint firstItem="GDl-UA-Egz" firstAttribute="top" secondItem="Kfi-Wd-JE5" secondAttribute="bottom" constant="182" id="kmT-fA-xWS"/>
+                            <constraint firstItem="Kfi-Wd-JE5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="lVj-jh-0x7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="changeButton" destination="GDl-UA-Egz" id="nsL-zb-J9x"/>
+                        <outlet property="countImageView" destination="Kfi-Wd-JE5" id="Gz8-cX-bV3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
